@@ -1,0 +1,8 @@
+运行这条指令
+node index.js unicom --user 输入你的手机号 --password 密码 --appid 你的 --node index.js unicom --
+安装
+pkg update -y
+
+pkg install git vim perl nodejs-lts wget curl nano cronie moreutils -y
+
+git clone https://github.com/xjals/49.git
