@@ -6,3 +6,11 @@ pkg update -y
 pkg install git vim perl nodejs-lts wget curl nano cronie moreutils -y
 
 git clone https://github.com/xjals/49.git
+
+             ls
+
+  cd 49  
+
+           ls
+
+    vim package-lock.json
