@@ -295,9 +295,9 @@ var start = async (params) => {
   }, taskOption)
 
   // 首页-签到有礼-免费拿-猜拳拿奖
-  await scheduler.regTask('dailyFingerSign', async (request) => {
+  //    await scheduler.regTask('dailyFingerSign', async (request) => {
     await require('./dailyFingerSign').doTask(request, options)
-  }, taskOption)
+ //     }, taskOption)
 
   // 首页-积分商城-火热抢购-三只松鼠-看视频得积分
   await scheduler.regTask('dailyShopVideoIntegral', async (request) => {
