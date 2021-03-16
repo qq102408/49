@@ -4,7 +4,7 @@ const { signRewardVideoParams } = require('./CryptoUtil')
 
 var dailysignin = {
   getIntegral: async (axios, options) => {
-    const useragent = `okhttp/4.4.0`
+    const useragent = `Dalvik/2.1.0`
     let { data, config } = await axios.request({
       baseURL: 'https://act.10010.com/',
       headers: {
@@ -30,7 +30,7 @@ var dailysignin = {
     }
   },
   query: async (axios, options) => {
-    const useragent = `okhttp/4.4.0`
+    const useragent = `Dalvik/2.1.0`
     let { data } = await axios.request({
       baseURL: 'https://act.10010.com/',
       headers: {
@@ -44,7 +44,7 @@ var dailysignin = {
     return data
   },
   daySign: async (axios, options) => {
-    const useragent = `okhttp/4.4.0`
+    const useragent = `Dalvik/2.1.0`
     let { data, config } = await axios.request({
       baseURL: 'https://act.10010.com/',
       headers: {
