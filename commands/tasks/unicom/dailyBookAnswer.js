@@ -142,6 +142,7 @@ var dailyBookAnswer = {
             })
         })
     },
+    /**
     raffle: async (axios, options) => {
         const { accessToken, searchParams, actId, answerId } = options
         let timestamp = moment().format('YYYYMMDDHHmmss')
@@ -224,7 +225,9 @@ var dailyBookAnswer = {
         } else {
             console.info('今日已答题完毕')
         }
+       
     }
 
 }
+**/
 module.exports = dailyBookAnswer
