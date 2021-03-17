@@ -284,10 +284,12 @@ var start = async (params) => {
   //   startTime: 22 * 3600
   // })
 
+  /**
   // 首页-知识-阅读答题赢好礼
   await scheduler.regTask('dailyBookAnswer', async (request) => {
     await require('./dailyBookAnswer').doTask(request, options)
   }, taskOption)
+  **/
 
   // 首页-积分乐园-集牛卡
   await scheduler.regTask('newYearUserSign', async (request) => {
