@@ -314,10 +314,12 @@ var start = async (params) => {
     await require('./dailyOtherRewardVideo').doPackeageChangeVideoIntegralTask(request, options)
   }, taskOption)
 
+  /*
   // 服务-查询-电子发票-赚积分
   await scheduler.regTask('dailyWisdomActivityIntegral', async (request) => {
     await require('./dailyOtherRewardVideo').doWisdomActivityIntegralTask(request, options)
   }, taskOption)
+*/
 
   // 福利社-聚人气-看视频得积分
   // await scheduler.regTask('doWelfareActivityIntegralTask', async (request) => {
@@ -329,11 +331,13 @@ var start = async (params) => {
     await require('./dailyUnicomTask').doIntegralAd(request, options)
     await require('./dailyUnicomTask').doTurnCard(request, options)
   }, taskOption)
-
+  
+/*
   // 冬奥专区-赢冬奥纪念品-玩游戏抽奖
   await scheduler.regTask('olympicgame', async (request) => {
     await require('./olympicgame').doTask(request, options)
   }, taskOption)
+  */
 
 
   // 我的钱包-沃钱包-幸运抽大奖
