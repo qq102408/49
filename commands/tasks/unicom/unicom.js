@@ -63,11 +63,13 @@ var start = async (params) => {
     await require('./dailyBookRead').doMemberDaySign(request, options)
   }, taskOption)
 
+  /*
   // 首页-小说-阅读现金红包雨-看视频得积分
   await scheduler.regTask('dailyRedbagRainVideoIntegral', async (request) => {
     // 看视频得积分
     await require('./dailyRedbagRain').dovideoIntegralTask(request, options)
   }, taskOption)
+  */
 
   // 首页-小说-阅读现金红包雨
   // 活动已下线
@@ -373,7 +375,7 @@ var start = async (params) => {
     await require('./hfgo').doTask(request, options)
   }, taskOption)
 
-  /**
+ 
   // 首页-签到-APP下载领积分
   await scheduler.regTask('dailyDownloadApp', async (request) => {
     await require('./dailyDownloadApp').doTask(request, options)
@@ -381,7 +383,6 @@ var start = async (params) => {
     ...taskOption,
     startTime: 13 * 3600,
   })
-**/
 
   // 清理领取某些未知方式的积分
   // 该处理可能会导致某些活动任务机会不足导致错误，所以执行时间要迟
