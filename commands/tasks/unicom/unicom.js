@@ -234,6 +234,7 @@ var start = async (params) => {
     await require('./commentSystem').commentTask(request, options)
   }, taskOption)
 
+  /*
   // 首页-游戏-娱乐中心-每日打卡-完成今日任务(200m)
   await scheduler.regTask('todayDailyTask', async (request) => {
     await require('./producGame').gameBox(request, options)
@@ -242,6 +243,7 @@ var start = async (params) => {
     ...taskOption,
     startTime: 22 * 3600
   })
+  */
 
   // 首页-签到有礼-居家娱乐馆
   // 活动已下线
