@@ -63,13 +63,13 @@ var start = async (params) => {
     await require('./dailyBookRead').doMemberDaySign(request, options)
   }, taskOption)
 
-  /*
+ 
   // 首页-小说-阅读现金红包雨-看视频得积分
   await scheduler.regTask('dailyRedbagRainVideoIntegral', async (request) => {
     // 看视频得积分
     await require('./dailyRedbagRain').dovideoIntegralTask(request, options)
   }, taskOption)
-  */
+  
 
   // 首页-小说-阅读现金红包雨
   // 活动已下线
@@ -318,12 +318,11 @@ var start = async (params) => {
     await require('./dailyOtherRewardVideo').doPackeageChangeVideoIntegralTask(request, options)
   }, taskOption)
 
-  /*
+ 
   // 服务-查询-电子发票-赚积分
   await scheduler.regTask('dailyWisdomActivityIntegral', async (request) => {
     await require('./dailyOtherRewardVideo').doWisdomActivityIntegralTask(request, options)
   }, taskOption)
-*/
 
   // 福利社-聚人气-看视频得积分
   // await scheduler.regTask('doWelfareActivityIntegralTask', async (request) => {
