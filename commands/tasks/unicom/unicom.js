@@ -19,6 +19,7 @@ var start = async (params) => {
   }
 /*
   // 每日签到积分
+  活动接口失效
   await scheduler.regTask('dailysignin', async (request) => {
     await require('./dailysignin').doTask(request, options)
     await require('./integral').addFlow(request, options)
@@ -137,12 +138,12 @@ var start = async (params) => {
     await require('./dailyNcow').doTask(request, options)
   }, taskOption)
 
-  /*
+ 
   // 首页-签到有礼-免费抽-拿红米笔记本-接元宝
   await scheduler.regTask('dailyIngots', async (request) => {
     await require('./dailyIngots').doTask(request, options)
   }, taskOption)
-  */
+
 
   // 首页-签到有礼-免费抽-抓OPPO手机
   await scheduler.regTask('dailyGrabdollPage', async (request) => {
@@ -234,7 +235,7 @@ var start = async (params) => {
     await require('./commentSystem').commentTask(request, options)
   }, taskOption)
 
-  /*
+  
   // 首页-游戏-娱乐中心-每日打卡-完成今日任务(200m)
   await scheduler.regTask('todayDailyTask', async (request) => {
     await require('./producGame').gameBox(request, options)
@@ -243,7 +244,7 @@ var start = async (params) => {
     ...taskOption,
     startTime: 22 * 3600
   })
-  */
+ 
 
   // 首页-签到有礼-居家娱乐馆
   // 活动已下线
@@ -318,12 +319,13 @@ var start = async (params) => {
     await require('./dailyOtherRewardVideo').doPackeageChangeVideoIntegralTask(request, options)
   }, taskOption)
 
- 
+ /**
   // 服务-查询-电子发票-赚积分
+  活动接口失效
   await scheduler.regTask('dailyWisdomActivityIntegral', async (request) => {
     await require('./dailyOtherRewardVideo').doWisdomActivityIntegralTask(request, options)
   }, taskOption)
-
+**/
   // 福利社-聚人气-看视频得积分
   // await scheduler.regTask('doWelfareActivityIntegralTask', async (request) => {
   //   await require('./dailyOtherRewardVideo').doWelfareActivityIntegralTask(request, options)
