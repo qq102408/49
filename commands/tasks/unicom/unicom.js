@@ -235,8 +235,9 @@ var start = async (params) => {
     await require('./commentSystem').commentTask(request, options)
   }, taskOption)
 
-  
+  /**
   // 首页-游戏-娱乐中心-每日打卡-完成今日任务(200m)
+  失效接口
   await scheduler.regTask('todayDailyTask', async (request) => {
     await require('./producGame').gameBox(request, options)
     await require('./producGame').doTodayDailyTask(request, options)
@@ -244,7 +245,7 @@ var start = async (params) => {
     ...taskOption,
     startTime: 22 * 3600
   })
- 
+ **/
 
   // 首页-签到有礼-居家娱乐馆
   // 活动已下线
@@ -293,7 +294,7 @@ var start = async (params) => {
   // })
 
   /**
-  // 首页-知识-阅读答题赢好礼
+  // 首页-知识-阅读答题赢好礼，失效接口
   await scheduler.regTask('dailyBookAnswer', async (request) => {
     await require('./dailyBookAnswer').doTask(request, options)
   }, taskOption)
@@ -339,6 +340,7 @@ var start = async (params) => {
   
 /*
   // 冬奥专区-赢冬奥纪念品-玩游戏抽奖
+  失效接口
   await scheduler.regTask('olympicgame', async (request) => {
     await require('./olympicgame').doTask(request, options)
   }, taskOption)
