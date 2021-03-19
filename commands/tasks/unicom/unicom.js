@@ -138,12 +138,12 @@ var start = async (params) => {
     await require('./dailyNcow').doTask(request, options)
   }, taskOption)
 
- 
+ /**
   // 首页-签到有礼-免费抽-拿红米笔记本-接元宝
   await scheduler.regTask('dailyIngots', async (request) => {
     await require('./dailyIngots').doTask(request, options)
   }, taskOption)
-
+**/
 
   // 首页-签到有礼-免费抽-抓OPPO手机
   await scheduler.regTask('dailyGrabdollPage', async (request) => {
