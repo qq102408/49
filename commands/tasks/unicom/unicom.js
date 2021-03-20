@@ -90,7 +90,7 @@ var start = async (params) => {
     // 首页-签到有礼-免流量得福利-3积分天天拿(阅读打卡) 已下线
     // await require('./dailyVideoBook').giftBoints(request, options)
   }, taskOption)
-
+/**
   // 首页-小说-章节详情-看视频领积分
   await scheduler.regTask('dailyBookVideo', async (request) => {
     // 首页-小说-读满10章赢好礼-看视频领2积分
@@ -98,7 +98,7 @@ var start = async (params) => {
     // 首页-小说-章节详情-看视频领积分
     await require('./dailyBookVideo').doTask(request, options)
   }, taskOption)
-
+**/
   await scheduler.regTask('dailyBookLuckdraw', async (request) => {
     // 首页-小说-阅读福利抽大奖
     await require('./dailyBookLuckdraw').doTask(request, options)
@@ -112,12 +112,12 @@ var start = async (params) => {
     startTime: 20 * 3600,
     ignoreRelay: true
   })
-
+/**
   // 首页-签到有礼-免费领-浏览领积分
   await scheduler.regTask('dailyLiuLan', async (request) => {
     await require('./dailyTTliulan').doTask(request, options)
   }, taskOption)
-
+**/
   // 首页-签到有礼-免费领-领免费霸王餐
   await scheduler.regTask('dailyScratchCard', async (request) => {
     await require('./dailyScratchCard').doTask(request, options)
